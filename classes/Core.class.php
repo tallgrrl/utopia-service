@@ -5,6 +5,7 @@
  * Additions by Herbert Molenda 2011-04-01 11:52:33
  * 
  ******/ 
+namespace home;
  Class Core 
  {
     public $sitevars;  
@@ -63,7 +64,7 @@
 
     public function trace($msg)
     {
-		trigger_error("Trace Line ----> " . $msg, E_USER_WARNING);
+		trigger_error("Trace Line FROM HOME namespace ----> " . $msg, E_USER_WARNING);
     }
 	
 	public function randomString($length=10, $caps=true, $nums=false, $symbols=false)
@@ -246,4 +247,5 @@
 	}
 }
 
+print "HERE";
 ?>

@@ -1,5 +1,5 @@
 <?php
-
+namespace home;
 class RequestHandler
 {
 	static $base;

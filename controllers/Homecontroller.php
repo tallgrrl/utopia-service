@@ -1,4 +1,9 @@
 <?
+namespace home;
+
+$basedir = dirname(__FILE__) . '/../';
+require_once($basedir."/classes/Core.class.php");
+
 class Homecontroller {
 
     public function Homecontroller()
@@ -15,11 +20,18 @@ class Homecontroller {
         exit();
     }
 
-    public static function get()
+    public static function get($params1)
     {
         $data = [];
 
         $data['message'] = "You have called the GET function";
+        $data['params'] = $params1;
+        try{
+            Core::trace("Hello World");
+        }
+        catch(Exception $e){
+            print $e->message;
+        }
 
         self::jsonify($data);
     }

@@ -8,6 +8,7 @@
  * 
  * @author: Tracy Lauren for Heimdall Networks April, 2012
  */
+namespace home;
 Class API
 {
     // boolean $debugFlag
